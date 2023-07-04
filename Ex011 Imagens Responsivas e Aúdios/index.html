@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas</title>
+    <link rel="shortcut icon" href="C:\Users\samue\Desktop\Aulas - TI\HTML-CSS\Ex004/js.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Para que as imagens do seu site se adaptem a qualquer tipo de tela que possam ser reproduzidas, por exemplo em TV's, smartphones, computadores e etc.</p>
+    <p>Tente abrir esse site em dispositivos diferentes ou diminua e aumente a janela do Crhome e veja como ficou!</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/foto_p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/foto_m.png" type="image/png">
+        <img src="Imagens/foto_g.png" alt="Foto P">
+    </picture>
+
+    <h1>Reproduzindo Aúdios</h1>
+    <p>Aprendendo a reproduzir aúdios</p>
+    <audio src="media/gersonrufinoOficial2014-deus-fez-4d1fb7.mp3" controls autoplay></audio>
+
+    <p>Pode se usar outra tag "audio" e o parâmetro "source"</p>
+    <audio preload="metadata" controls loop>
+        <source src="media/gersonrufinoOficial2014-deus-fez-4d1fb7.mp3" type="audio/mpeg">
+        <source src="media/gersonrufinoOficial2014-deus-fez-4d1fb7.mp3" type="audio/ogg">
+        <source src="media/gersonrufinoOficial2014-deus-fez-4d1fb7.mp3" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir esse aúdio.</p>
+    </audio>
+</body>
+</html>
