@@ -11,13 +11,20 @@
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
-            background-repeat: inherit;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* fixed fixa a img na tela e o conteudo rola, o scrool roda a img e o conteudo */
             background-size: cover /* cover cobre a tela inteira adaptando a img, o contain mostra 100% da img sem cortar */
+            
+            /*
+            Shorthand para background: color > image > position > repeat > size > attachment
+
+            background: black url('imagens/wallpaper002.jpg') center center no repeat cover fixed ;
+            */
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             margin-top: 10px;
