@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            height: 97%;
+        }
+
+        .container {
+            height: 97vh;
+            display: flex;
+            flex-direction: row;
+            justify-content:flex-start; /* Alinha na vertical */
+            align-items: flex-end; /* Alinha na horizontal */
+        }
+
+        .child {
+            width: 200px;
+            height: 200px;
+            background-color: darkgrey;
+            border: 1px solid black;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Flex Box</h1>
+    <p>Essa propriedade serve para alinhar conteúdos, tanto na horizontal, vertical, centro, começo, fim, em linha, em coluna, e etc. Com declarações simples como <code>justify-content</code>, <code>align-itens</code>, <code>flex-direction</code>, e etc.</p>
+
+    <div class="container">
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+header {
+    background-color: black;
+    display: flex;
+    justify-content: space-between; /* Alinha os itens nas extremidades da tela */
+    flex-wrap: wrap; /* Quebra de linha quando a tela for peqeuna demais */
+    align-items: center;
+    padding: 20px;
+}
+
+.menu a {
+    margin-left: 20px;
+    padding: 7px;
+}
+
+.menu a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    transition: 0.5s;
+}
