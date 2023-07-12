@@ -13,6 +13,10 @@
     font-weight: 500;
 }
 
+body {
+    background-color: black;
+}
+
 a {
     text-decoration: none;
     color: white;
@@ -31,7 +35,7 @@ a {
 
 header {
     height: 30px;
-    background-color: rgb(24, 24, 32);
+    background-color: rgb(32, 32, 43);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -76,4 +80,35 @@ nav > a {
     width: 20px;
     height: 20px;
     border-radius: 50%;
+}
+
+main {
+    max-width: 600px;
+    margin: auto;
+    background-color: rgb(24, 24, 32);
+}
+
+section.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 40px 0px 50px;
+}
+
+.menu > h1 {
+    font-weight: bolder;
+}
+
+section.selecao {
+    color: white;
+    display: flex;
+}
+
+.selecao > div {
+    padding: 8px;
+    margin: 15px 15px 15px 0px;
+    font-size: small;
+    border: 1px solid rgb(60, 60, 78);
+    border-radius: 12px;
 }
