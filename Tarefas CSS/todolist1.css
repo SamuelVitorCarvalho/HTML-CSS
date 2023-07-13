@@ -161,20 +161,56 @@ section.selecao {
     transform: translate(-50%, -50%);
 }
 
-.card1 > div.conteudo {
+.card1 > div.nametask {
     position: absolute;
     top: 50%;
     margin-top: 45px;
 }
 
-.conteudo > h2 {
+.nametask > h2 {
     font-weight: bolder;
     font-size: 1.5em;
-    margin-bottom: 10px;
 }
 
-.conteudo > p {
+.done {
+    position: absolute;
+    top: 55%;
+    height: 155px;
     font-weight: bold;
     font-size: 0.9em;
     color: rgb(109, 109, 121);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
+
+.circle {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 4px solid rgb(44, 44, 49);
+    margin-left: 60px;
+}
+  
+.fill {
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    border: inherit;
+    border-top-color: rgb(255, 109, 165);
+    animation: fillAnimation 2s forwards;
+}
+  
+@keyframes fillAnimation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+  
