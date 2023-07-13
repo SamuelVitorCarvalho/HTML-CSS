@@ -126,6 +126,7 @@ section.selecao {
     width: 610px;
     height: 380px;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
 }
 
@@ -210,7 +211,7 @@ section.selecao {
       transform: rotate(0deg);
     }
     100% {
-      transform: rotate(360deg);
+      transform: rotate(180deg);
     }
 }
   
