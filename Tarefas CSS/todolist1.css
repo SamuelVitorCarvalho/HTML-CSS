@@ -121,26 +121,23 @@ section.selecao {
 }
 
 .cards {
+    margin: auto;
     margin-top: 25px;
     margin-left: -10px;
-    width: 610px;
+    max-width: 600px;
     height: 380px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
 }
 
 .card1 {
-    width: 170px;
+    width: 158px;
     height: 155px;
     border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     background-color: rgb(37, 37, 49);
     color: white;
     padding: 20px 10px 10px 20px;
-    margin: 0px 10px;
 }
 
 .card1 > div.icon {
@@ -148,9 +145,6 @@ section.selecao {
     border-radius: 15px;
     width: 45px;
     height: 45px;
-    display: flex;
-    justify-items: center;
-    align-items: center;
     position: relative;
 }
 
@@ -214,4 +208,7 @@ section.selecao {
       transform: rotate(180deg);
     }
 }
-  
+
+.cards > div:nth-child(n + 4) {
+    background-color: brown;
+}
