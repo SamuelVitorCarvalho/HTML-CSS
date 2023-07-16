@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 
 :root {
     --font-padrao:'Roboto', sans-serif;
@@ -112,7 +112,7 @@ section.selecao {
     display: flex;
 }
 
-.selecao > div {
+.selecao  div {
     padding: 8px;
     margin: 15px 15px 15px 0px;
     font-size: small;
@@ -120,10 +120,15 @@ section.selecao {
     border-radius: 12px;
 }
 
+section.cards > a {
+    font-size: 1em;
+}
+
 .cards {
     margin: auto;
     margin-top: 25px;
     margin-left: -10px;
+    margin-bottom: 25px;
     max-width: 600px;
     height: 380px;
     display: grid;
@@ -135,9 +140,10 @@ section.selecao {
     width: 158px;
     height: 155px;
     border-radius: 20px;
-    background-color: rgb(37, 37, 49);
+    background-color: rgba(37, 37, 49, 0.856);
     color: white;
     padding: 20px 10px 10px 20px;
+    position: relative;
 }
 
 .card1 > div.icon {
@@ -145,21 +151,19 @@ section.selecao {
     border-radius: 15px;
     width: 45px;
     height: 45px;
-    position: relative;
 }
 
 .card1 > div.icon > span {
     font-size: x-large;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 23%;
+    left: 23%;
     transform: translate(-50%, -50%);
 }
 
 .card1 > div.nametask {
     position: absolute;
     top: 50%;
-    margin-top: 45px;
 }
 
 .nametask > h2 {
@@ -169,8 +173,7 @@ section.selecao {
 
 .done {
     position: absolute;
-    top: 55%;
-    height: 155px;
+    top: 75%;
     font-weight: bold;
     font-size: 0.9em;
     color: rgb(109, 109, 121);
@@ -209,6 +212,20 @@ section.selecao {
     }
 }
 
-.cards > div:nth-child(n + 4) {
-    background-color: brown;
+.add {
+    border: 3px solid rgba(37, 37, 49, 0.856) ;
+    background-color: transparent;
+    color: rgb(109, 109, 121);
+    width: 188px;
+    height: 92.5px;
+    border-radius: 20px;
+}
+
+.more {
+    width: 188px;
+    height: 92.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(109, 109, 121);
 }
