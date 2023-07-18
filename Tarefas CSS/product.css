@@ -18,6 +18,7 @@ body {
 header {
     height: 30px;
     padding: 10px;
+    margin-top: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -32,6 +33,21 @@ header {
 
 .menu  a {
     margin: 0px 20px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 100px;
+    margin-bottom: 5px;
+}
+
+.logo > h1 {
+    font-size: 2em;
 }
 
 nav {
