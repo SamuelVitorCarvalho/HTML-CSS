@@ -104,7 +104,7 @@ nav > .cart > .number > p {
     font-size: 0.7em;
 }
 
-main {
+section.conteudo {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -112,9 +112,10 @@ main {
 .separacao > div {
     background-color: rgba(240, 240, 240, 0.76);
     width: 3px;
-    height: 100vh;
+    height: 80vh;
     position: absolute;
     right: 50vw;
+    top: 155px;
 }
 
 .variacao {
@@ -149,6 +150,5 @@ section.product {
 }
 
 .descricao {
-    margin-top: 30px;
-    background-color: aqua;
+    margin: 30px;
 }
