@@ -59,6 +59,7 @@ header {
 
 .logo > h1 {
     font-size: 2em;
+    font-weight: 400;
 }
 
 nav {
@@ -151,4 +152,95 @@ section.product {
 
 .descricao {
     margin: 30px;
+}
+
+.descricao > .name > h1 {
+    font-size: 3em;
+    font-family: var(--fontpadrao);
+}
+
+.descricao > .name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.descricao .favorite {
+    background-color: rgba(240, 240, 240, 0.76);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.descricao > .description-product {
+    max-width: 550px;
+    font-family: var(--fontpadrao);
+    font-size: 1em;
+    margin-top: 30px;
+    line-height: 1.7;
+}
+
+.descricao > .price {
+    margin-top: 40px;
+}
+
+.price > p {
+    font-size: 2.7em;
+    font-weight: 540;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.price > .star {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.star > .review {
+    margin-left: 15px;
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+.colour {
+    margin-top: 40px;
+    font-family: var(--fontpadrao);
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.colors {
+    display: flex;
+    flex-direction: row;
+}
+
+.colors div {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 15px;
+}
+
+.amarelo {
+    background-color: rgb(233, 151, 0);
+}
+
+.cinza {
+    background-color: rgb(150, 145, 139);
+}
+
+.azul {
+    background-color: rgb(104, 119, 142);
+}
+
+.verde {
+    background-color: rgb(2, 97, 61);
+}
+
+.petroleo {
+    background-color: rgb(38, 63, 55);
 }
