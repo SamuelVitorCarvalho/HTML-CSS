@@ -48,8 +48,10 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     position: absolute;
-    right: 40.7%;
+    left: 50%;
+    transform: translate(-50%, 0%);
 }
 
 .logo img {
@@ -115,7 +117,8 @@ section.conteudo {
     width: 3px;
     height: 80vh;
     position: absolute;
-    right: 46.5vw;
+    left: 50%;
+    transform: translate(-50%, 0%);
     top: 155px;
 }
 
