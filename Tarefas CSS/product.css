@@ -300,13 +300,14 @@ div.background {
 .colors {
     display: flex;
     flex-direction: row;
+    margin-left: -15px;
 }
 
 .colors div {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    margin: 15px;
+    margin: 15px 15px 10px 15px;
 }
 
 .amarelo {
@@ -323,8 +324,128 @@ div.background {
 
 .verde {
     background-color: rgb(2, 97, 61);
+    position: relative;
+}
+
+.line {
+    position: absolute;
+    left: 150.4vh;
+    width: 30px;
+    height: 3.5px;
+    background-color: rgb(36, 36, 36);
+    border-radius: 3px;
 }
 
 .petroleo {
     background-color: rgb(38, 63, 55);
+}
+
+.buy-add {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0px 40px 0px;
+}
+
+.buy {
+    border: 2px solid black;
+    padding: 20px;
+    width: 200px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    .buy > a {
+        font-weight: 700;
+        font-size: 1.1em;
+    }
+
+.addtocart {
+    background-color: black;
+    border: 2px solid black;
+    padding: 20px;
+    width: 200px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addtocart > a {
+    color: white;
+    font-weight: 400;
+    font-size: 1.1em;
+}
+
+.weeks {
+    display: flex;
+    justify-content: space-between;
+    line-height: 25px;
+    margin-bottom: 30px;
+    font-size: small;
+    font-weight: 400;
+    padding-bottom: 8px;
+    border-bottom: 1.8px solid rgba(211, 210, 210, 0.76);
+}
+
+.frete {
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+    font-weight: 400;
+    padding-bottom: 8px;
+    border-bottom: 1.8px solid rgba(211, 210, 210, 0.76);
+}
+
+footer {
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+}
+
+footer > div {
+    background-color: black;
+    width: 85px;
+    height: 65px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer > div::before {
+    content: ''; /* Isso serve para dizer que não tem nada */
+    width: 0;
+    height: 0;
+    border-left: 96px solid transparent;
+    border-right: 126px solid transparent;
+    border-bottom: 100px solid black;
+    bottom: -45px;
+    position: absolute;
+    right: -53px;
+}
+
+footer > div::after {
+    content: ''; /* Isso serve para dizer que não tem nada */
+    width: 0;
+    height: 0;
+    border-left: 57px solid transparent;
+    border-right: 105px solid transparent;
+    border-bottom: 100px solid black;
+    bottom: -46px;
+    position: absolute;
+    right: -94px;
+}
+
+footer a {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
 }
