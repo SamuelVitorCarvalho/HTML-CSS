@@ -29,8 +29,7 @@ main {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    overflow: hidden; /* Tudo oq estiver passando para fpra da borda ele esconde */
+    overflow: hidden; /* Tudo oq estiver passando para fora da borda, ele esconde */
 
     background-color: white;
     width: 250px;
@@ -38,6 +37,7 @@ main {
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
 
+    transform: translate(-50%, -50%);
     transition: width .2s, height .2s;
     transition-timing-function: ease; /* Deixa as animações mais flúidas */
 }
@@ -58,10 +58,14 @@ main {
 #formulario > h1 {
     text-align: center;
     margin-bottom: 10px;
+    color: #2d6462;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.582);
 }
 
 #formulario > p {
     font-size: 0.8em;
+    text-align: justify;
+    padding: 5px;
 }
 
 form > .campo {
@@ -93,10 +97,10 @@ form  label {
     font-size: 1em;
     width: calc(100% - 44.5px);
     height: 100%;
-    transform: translateY(-12px);
     border: none;
     border-radius: 8px;
     padding: 4px;
+    transform: translateY(-12px);
 }
 
 .campo > input:focus-within { /* Quando eu clicar no elemento */
@@ -112,7 +116,7 @@ form > input[type=submit] {
     width: 85%;
     height: 40px;
     margin: auto;
-    margin-top: 30px;
+    margin-top: 10px;
     background-color: #49a09d;
     color: white;
     border: none;
