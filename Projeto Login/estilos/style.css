@@ -153,3 +153,27 @@ form > a.buttom:hover {
 form >a.buttom > span {
     font-size: 0.8em;
 }
+
+div.logo {
+    width: 85%;
+    margin: auto;
+    margin-top: 10px;
+
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+}
+
+.logo img {
+    width: 45px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.384);
+}
+
+.logo img:hover {
+    border: 1px solid rgba(0, 0, 0, 0.445);
+
+    transform: translate(0px, -2px);
+    transition: transform .5s, border .8s;
+}
