@@ -217,7 +217,7 @@ section.cards > a {
     }
 }
 
-@keyframes changeBackgroundColorAnimation {
+/* @keyframes changeBackgroundColorAnimation {
     0% {
         background-color: green;
         transform: rotateY('90deg');
@@ -230,7 +230,7 @@ section.cards > a {
         background-color: green;
         border-radius: 10px;
     }
-}
+} */
 
 .info {
     display: flex;
